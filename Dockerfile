@@ -8,8 +8,11 @@ ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update \
   && apt-get clean
+RUN apt-get -y install tesseract-ocr
 
 COPY ./requirements.txt .
+RUN pip install pillow
+RUN pip install pytesseract
 RUN pip install -r requirements.txt
 
 COPY . .
