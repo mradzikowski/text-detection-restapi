@@ -9,8 +9,8 @@ def create_app():
     app_settings = os.getenv("APP_SETTINGS")
     app.config.from_object(app_settings)
 
-    from src.api.text import text_blueprint
+    from src.api.text import ocr_blueprint
 
-    app.register_blueprint(text_blueprint)
+    app.register_blueprint(ocr_blueprint)
 
     return app
