@@ -4,3 +4,4 @@ pytesseract==0.2.6
 pillow>=6.2.0
 pytest~=6.2.4
 flake8===3.9.2
+black==21.5b1
