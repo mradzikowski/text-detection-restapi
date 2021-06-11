@@ -1,5 +1,6 @@
 class BaseConfig:
     TESTING = False
+    SECRET_KEY = 'my_precious'
 
 
 class DevelopmentConfig(BaseConfig):
